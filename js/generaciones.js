@@ -37,22 +37,52 @@ class Persona {
 
     // mostrarDatos: devuelve toda la información del objeto.
     mostrarDatos() {
-        document.write(`Nombre: ${this.nombre} -- Edad: ${this.edad} -- DNI: ${this.dni} -- ${this.sexo} -- Peso: ${this.peso}kg -- Altura: ${this.altura} -- Año de Nacimiento: ${this.anioNacimiento}<br>`);
+        document.write(`Nombre: ${this.nombre} -- Edad: ${this.edad} -- DNI: ${this.dni} -- ${this.sexo} -- Peso: ${this.peso}kg -- Altura: ${this.altura}cm -- Año de Nacimiento: ${this.anioNacimiento}<br>`);
     }
 
     // generaDNI(): genera un número aleatorio de 8 cifras.
-    // generaDNI(0, 99999999) {
-    //     let nuevoDNI = Math.floor(Math.random() * (99999999 - 0) + 0);
-    //     this.dni = nuevoDNI;
-    // }
+    generaDNI() {
+        let nuevoDNI = Math.floor(Math.random() * 99999999);
+        this.dni = nuevoDNI;
+    }
 }
 
-let persona1 = new Persona("Emilio Hurtado", 27, 37423538, "H", 74, 1.75, 1993);
+let persona1 = new Persona("Emilio Hurtado", 27, 37423538, "H", 74, 175, 1993);
 let persona2 = new Persona("Leonidas Hurtado", 6, 60888999, "H", 8, 40, 2010);
+let persona3 = new Persona("María Silvina Bahr", 54, 18037158, "M", 60, 160, 1969);
+let persona4 = new Persona("Abraham Pereyra", 74, 4037158, "H", 80, 178, 1954);
+let persona5 = new Persona("Domenico Palmieri", 90, 537158, "H", 90, 180, 1932);
 persona1.esMayorDeEdad();
 persona1.mostrarGeneracion();
+persona1.mostrarDatos();
+document.write("Generando nuevo DNI aleatorio...<br>")
+persona1.generaDNI();
 persona1.mostrarDatos();
 document.write("<hr>");
 persona2.esMayorDeEdad();
 persona2.mostrarGeneracion();
 persona2.mostrarDatos();
+document.write("Generando nuevo DNI aleatorio...<br>")
+persona2.generaDNI();
+persona2.mostrarDatos();
+document.write("<hr>");
+persona3.esMayorDeEdad();
+persona3.mostrarGeneracion();
+persona3.mostrarDatos();
+document.write("Generando nuevo DNI aleatorio...<br>")
+persona3.generaDNI();
+persona3.mostrarDatos();
+document.write("<hr>");
+persona4.esMayorDeEdad();
+persona4.mostrarGeneracion();
+persona4.mostrarDatos();
+document.write("Generando nuevo DNI aleatorio...<br>")
+persona4.generaDNI();
+persona4.mostrarDatos();
+document.write("<hr>");
+persona5.esMayorDeEdad();
+persona5.mostrarGeneracion();
+persona5.mostrarDatos();
+document.write("Generando nuevo DNI aleatorio...<br>")
+persona5.generaDNI();
+persona5.mostrarDatos();
