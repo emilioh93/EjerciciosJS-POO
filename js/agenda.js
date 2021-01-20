@@ -104,4 +104,4 @@ let contacto10 = new Contacto("Fernando", 381521469);
 let agenda = [contacto1, contacto2, contacto3, contacto4];
 
 // Comienzo a desarrollar los métodos
-agenda.aniadirContacto(contacto5);
+aniadirContacto(contacto5);
